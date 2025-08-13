@@ -1,46 +1,35 @@
-# Manifest V3 升级说明
+# Chrome Manifest V3 兼容性说明
 
-## 主要变化
+## 🎯 核心问题解决
 
-### 1. manifest.json 更新
-- `manifest_version` 从 2 升级到 3
-- `background.scripts` 改为 `background.service_worker`
-- 移除了 `webextension-polyfill` 依赖
-- 添加了 `host_permissions` 字段来明确指定需要访问的网站
+如果你遇到原版 DoubanListingHelper 扩展在 Chrome 中无法工作的问题，这通常是因为 Chrome 已升级到 Manifest V3 标准。
 
-### 2. background.js 更新
-- 从 background scripts 改为 service worker
-- 将 `browser.*` API 调用改为 `chrome.*` API 调用
-- 移除了 webextension-polyfill 依赖
+**此版本专门解决此兼容性问题。**
 
-### 3. content.js 更新
-- 将 `browser.*` API 调用改为 `chrome.*` API 调用
-- 移除了 webextension-polyfill 依赖
+## ✅ 兼容性
 
-### 4. package.json 更新
-- 移除了 `webextension-polyfill` 开发依赖
+- **Chrome 88+**: 完全支持
+- **Edge 88+**: 完全支持  
+- **Opera 74+**: 完全支持
 
-## 兼容性说明
+## 🔧 主要变更
 
-- Manifest V3 原生支持 Chrome Extension API，无需 polyfill
-- 所有功能保持不变
-- 支持 Chrome 88+ 版本
+- 使用 Manifest V3 标准
+- Service Worker 后台处理
+- 优化的权限设置
 
-## 安装说明
+## 📱 安装
 
-1. 删除 `node_modules` 文件夹（如果存在）
-2. 运行 `npm install` 安装依赖
-3. 在 Chrome 浏览器中加载扩展：
-   - 打开 `chrome://extensions/`
-   - 启用"开发者模式"
-   - 点击"加载已解压的扩展程序"
-   - 选择项目文件夹
+1. 下载扩展包
+2. Chrome → `chrome://extensions/`
+3. 启用开发者模式
+4. 加载已解压的扩展程序
 
-## 功能特性
+## ⚠️ 注意
 
-- 支持从以下网站一键添加豆瓣条目：
-  - 音乐：Discogs、Bandcamp、Apple Music
-  - 电影：IMDB
-  - 游戏：Steam
-- 自动填充表单信息
-- 下载封面图片 
+- 确保 Chrome 版本在 88 或以上
+- 如果从旧版本升级，建议先卸载旧版本
+
+---
+
+**这个版本解决了 Manifest V3 兼容性问题，让你可以继续使用 DoubanListingHelper 的所有功能。** 
