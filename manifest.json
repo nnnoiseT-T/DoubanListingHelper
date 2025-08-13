@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "豆瓣添加条目助手",
+    "short_name": "DoubanListingHelper",
+    "version": "1.0",
+    "description": "一键添加豆瓣条目，支持音乐（Discogs/Bandcamp/Apple Music）、电影(IMDB)、游戏（Steam）条目。",
+    "icons": {
+      "48": "icons/douban-48.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://music.douban.com/new_subject",
+                    "https://www.douban.com/game/create",
+                    "https://movie.douban.com/new_subject",
+                    "*://store.steampowered.com/*",
+                    "*://*.bandcamp.com/*",
+                    "*://www.discogs.com/*master*",
+                    "*://*.bandcamp.com/*",
+                    "*://www.discogs.com/*release*", 
+                    "*://music.apple.com/*/album/*",
+                    "*://*.imdb.com/title/*"
+                ],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["downloads", "tabs"],
+    "host_permissions": [
+        "https://music.douban.com/*",
+        "https://www.douban.com/*",
+        "https://movie.douban.com/*",
+        "*://store.steampowered.com/*",
+        "*://*.bandcamp.com/*",
+        "*://www.discogs.com/*",
+        "*://music.apple.com/*",
+        "*://*.imdb.com/*"
+    ]
+}
