@@ -15,7 +15,7 @@ If you're experiencing issues with the original DoubanListingHelper extension no
 - **Multi-Platform Support**: Music, movies, games
 - **Cover Image Download**: Downloads cover images automatically
 
-## 🚀 Installation
+## Installation
 
 1. Download and extract the extension package
 2. Open Chrome → `chrome://extensions/`
