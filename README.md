@@ -2,7 +2,7 @@
 
 A Chrome extension that automates adding media listings to [Douban](https://www.douban.com/). This version is specifically designed to work with Chrome Manifest V3, solving compatibility issues that older versions may have.
 
-[中文文档](./README_CN.md) | [Follow me on Douban](https://www.douban.com/people/49528893/)
+[中文文档](./README_CN.md) | [Follow me on Douban](https://www.douban.com/people/189958346/?_i=9136888WC2Ufo3)
 
 ## Main Purpose
 
