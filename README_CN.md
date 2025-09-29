@@ -2,7 +2,7 @@
 
 一个 Chrome 扩展，用于自动化向 [豆瓣](https://www.douban.com/) 添加媒体条目。此版本专门为 Chrome Manifest V3 设计，解决旧版本可能存在的兼容性问题。
 
-[English README](./README.md) | [关注我的豆瓣: lzqqqqqq](https://www.douban.com/people/49528893/)
+[English README](./README.md) | [关注我的豆瓣: 溜溜溜](https://www.douban.com/people/189958346/?_i=9136888WC2Ufo3)
 
 ## 主要用途
 
