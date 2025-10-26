@@ -44,7 +44,7 @@ class DoubanPage {
                 // console.log("check");
                 try{
                     this.fillDropdown(element, value, elementParas);
-                } catch {err} {
+                } catch (err) {
                     throw "Illegal dropdown parameter!";
                 }
                 
@@ -667,7 +667,7 @@ class Discogs extends SourcePage {
                 try{
                     let ele=document.getElementById('notes');
                     if (!ele){
-                        ele=document.getelementsById('release-notes');
+                        ele=document.getElementById('release-notes');
                     }
                     description+='\n\n'+ele.children[1].textContent.trim();
                     

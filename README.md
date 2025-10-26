@@ -2,11 +2,20 @@
 
 A Chrome extension that automates adding media listings to [Douban](https://www.douban.com/). This version is specifically designed to work with Chrome Manifest V3, solving compatibility issues that older versions may have.
 
-[中文文档](./README_CN.md) | [Follow me on Douban](https://www.douban.com/people/189958346/?_i=9136888WC2Ufo3)
+[中文文档](./README_CN.md) | [Follow me on Douban: 溜溜溜](https://www.douban.com/people/189958346/)
 
 ## Main Purpose
 
 If you're experiencing issues with the original DoubanListingHelper extension not working in Chrome due to Manifest V3 requirements, **this is the solution**. This version is fully compatible with modern Chrome browsers.
+
+## Changelog
+
+### Bug Fixes
+- Fixed catch statement syntax error in `content.js` line 47 (`catch {err}` → `catch (err)`)
+- Fixed JavaScript method name typo in `content.js` line 670 (`getelementsById` → `getElementById`)
+- Resolved cross-platform compatibility issues, especially on Windows systems
+
+These fixes ensure the extension works properly on all operating systems (Windows, macOS, Linux).
 
 ## Features
 

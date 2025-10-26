@@ -2,11 +2,20 @@
 
 一个 Chrome 扩展，用于自动化向 [豆瓣](https://www.douban.com/) 添加媒体条目。此版本专门为 Chrome Manifest V3 设计，解决旧版本可能存在的兼容性问题。
 
-[English README](./README.md) | [关注我的豆瓣: 溜溜溜](https://www.douban.com/people/189958346/?_i=9136888WC2Ufo3)
+[English README](./README.md) | [关注我的豆瓣: 溜溜溜](https://www.douban.com/people/189958346/)
 
 ## 主要用途
 
 如果你遇到原版 DoubanListingHelper 扩展在 Chrome 中因 Manifest V3 要求而无法工作的问题，**这就是解决方案**。此版本与现代 Chrome 浏览器完全兼容。
+
+## 更新日志
+
+### Bug 修复
+- 修复了 `content.js` 第 47 行的 catch 语句语法错误（`catch {err}` → `catch (err)`）
+- 修复了 `content.js` 第 670 行的 JavaScript 方法名拼写错误（`getelementsById` → `getElementById`）
+- 解决了可能导致跨平台兼容性问题（特别是 Windows 系统）的代码问题
+
+这些修复确保了扩展在所有操作系统（Windows、macOS、Linux）上都能正常工作。
 
 ## 特性
 
